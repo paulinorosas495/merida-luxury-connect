@@ -13,7 +13,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export function ValueProps() {
   return (
-    <section className="bg-[#1C1C1C] py-24 sm:py-32">
+    <section id="values" className="bg-[#1C1C1C] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <p className="mb-4 text-[11px] uppercase tracking-[0.4em] text-[#C9A84C]">
