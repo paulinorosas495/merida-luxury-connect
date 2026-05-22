@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { ValueProps } from "@/components/ValueProps";
+import { WhyUs } from "@/components/WhyUs";
+import { ContactCTA } from "@/components/ContactCTA";
+import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Long Term Rentals Mérida — Renta de propiedades con asesoría exclusiva" },
+      {
+        name: "description",
+        content:
+          "Servicio exclusivo para encontrar tu renta perfecta en Mérida. Asesoría personalizada, respaldo legal y acompañamiento total hasta entregarte las llaves.",
+      },
+      { property: "og:title", content: "Long Term Rentals Mérida" },
+      {
+        property: "og:description",
+        content:
+          "Te acompañamos desde el primer contacto hasta las llaves en tu mano. Sin intermediarios. Respuesta inmediata por WhatsApp.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-[#0A0A0A] text-[#F5F0EB]">
+      <Navbar />
+      <Hero />
+      <ValueProps />
+      <WhyUs />
+      <ContactCTA />
+      <Footer />
+      <FloatingWhatsApp />
+    </main>
+  );
 }
