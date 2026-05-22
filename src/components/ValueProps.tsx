@@ -53,7 +53,7 @@ function ValueCard({
   Icon: LucideIcon;
   delay: number;
 }) {
-  const { ref, visible } = useReveal<HTMLDivElement>();
+  const { ref, visible } = useReveal<HTMLAnchorElement>();
   return (
     <Link
       to="/valor/$slug"
