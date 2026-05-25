@@ -63,6 +63,70 @@ export const site = {
     headline: "Da el primer paso. Nosotros hacemos el resto.",
     subtitle: "Sin formularios. Sin esperas. Respuesta inmediata.",
   },
+  process: {
+    title: "Nuestro Proceso",
+    subtitle: "¿Cómo funciona?",
+    ctaHeadline: "¿Listo para comenzar tu proceso?",
+    ctaSubtitle: "Hablemos por WhatsApp y damos inicio hoy mismo.",
+    steps: [
+      {
+        number: 1,
+        title: "Formulario Inicial",
+        specialist: "Asesor de Bienvenida",
+        description:
+          "El cliente completa un formulario con sus necesidades, presupuesto y preferencias de propiedad.",
+        icon: "clipboard-list",
+      },
+      {
+        number: 2,
+        title: "Análisis de Analista",
+        specialist: "Analista de Propiedades",
+        description:
+          "Un analista de propiedades con experiencia evalúa el formulario y determina cuál es la propiedad ideal según el perfil del cliente.",
+        icon: "search",
+      },
+      {
+        number: 3,
+        title: "Pago del Servicio",
+        specialist: "Coordinador de Operaciones",
+        description:
+          "El cliente realiza el pago para iniciar formalmente la operación y activar al equipo de especialistas.",
+        icon: "credit-card",
+      },
+      {
+        number: 4,
+        title: "Análisis Financiero",
+        specialist: "Financiero Especializado",
+        description:
+          "Un financiero especializado determina los rangos de precio adecuados y genera una oferta estratégica al dueño del inmueble.",
+        icon: "trending-up",
+      },
+      {
+        number: 5,
+        title: "Revisión Legal",
+        specialist: "Abogado Inmobiliario",
+        description:
+          "Un abogado inmobiliario verifica que la propiedad no tenga gravámenes, determina su estatus legal y redacta todos los contratos de la operación en favor de los intereses del cliente.",
+        icon: "scale",
+      },
+      {
+        number: 6,
+        title: "Estrategia Fiscal",
+        specialist: "Contador Especialista",
+        description:
+          "Un contador especialista diseña la estrategia fiscal óptima para la operación, minimizando la carga tributaria del cliente.",
+        icon: "calculator",
+      },
+      {
+        number: 7,
+        title: "Cierre Notarial",
+        specialist: "Notario Público",
+        description:
+          "Cita con el notario público, firma de escrituras y entrega de llaves al cliente.",
+        icon: "key",
+      },
+    ],
+  },
   footer: "© 2025 Long Term Rentals Mérida",
 };
 
