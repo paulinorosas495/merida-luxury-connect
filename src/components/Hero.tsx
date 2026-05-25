@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import { Link } from "@tanstack/react-router";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 export function Hero() {
