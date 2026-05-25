@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { site } from "@/config/site";
 
 export function Navbar() {
@@ -36,13 +37,21 @@ export function Navbar() {
             {site.brand}
           </span>
         </a>
-        <a
-          href="#contact"
-          onClick={handleContact}
-          className="rounded-full border border-[#C9A84C] px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#C9A84C] transition-colors duration-300 hover:bg-[#C9A84C] hover:text-[#0A0A0A] sm:px-5 sm:text-sm"
-        >
-          {site.nav.contactCta}
-        </a>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <Link
+            to="/proceso"
+            className="hidden text-xs font-medium uppercase tracking-[0.15em] text-[#F5F0EB]/70 transition-colors hover:text-[#C9A84C] sm:block sm:text-sm"
+          >
+            Nuestro Proceso
+          </Link>
+          <a
+            href="#contact"
+            onClick={handleContact}
+            className="rounded-full border border-[#C9A84C] px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#C9A84C] transition-colors duration-300 hover:bg-[#C9A84C] hover:text-[#0A0A0A] sm:px-5 sm:text-sm"
+          >
+            {site.nav.contactCta}
+          </a>
+        </div>
       </div>
     </header>
   );

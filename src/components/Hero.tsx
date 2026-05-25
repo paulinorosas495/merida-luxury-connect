@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import { Link } from "@tanstack/react-router";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 export function Hero() {
@@ -23,8 +24,14 @@ export function Hero() {
         <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-[#F5F0EB]/75 sm:text-lg">
           {site.hero.subtitle}
         </p>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex flex-col items-center gap-4">
           <WhatsAppButton label={site.hero.cta} size="lg" />
+          <Link
+            to="/proceso"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-[#C9A84C]/50 px-6 py-3 text-sm font-medium tracking-wide text-[#C9A84C] transition-all duration-300 hover:border-[#C9A84C] hover:bg-[#C9A84C]/10 sm:px-8"
+          >
+            Conoce nuestro proceso
+          </Link>
         </div>
       </div>
     </section>
